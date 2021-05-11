@@ -1,0 +1,12 @@
+
+<h1 id = "my-header">Top {{number}} frequent words</h1>
+<div class = "wrapper">
+    <app-table-component></app-table-component>
+</div>
+<div class = "wrapper">
+    <form class="form-inline" ngNativeValidate (ngSubmit)="onSubmit()" style="text-align:center">
+        <label for="input_number">Number :</label>
+        <input autocomplete="off" type="number" class="form-control" id="input_number" placeholder="Enter number" name="input_number" [(ngModel)]="number" required >
+        <button  type="submit" class="btn btn-success btn-export">Submit</button>
+    </form>
+</div>
